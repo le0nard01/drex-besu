@@ -1,1 +1,6 @@
 vars.yml
+yaml/besu/besu-svc.yml
+yaml/besu/pvc-besu-data.yml
+yaml/metrics/grafana/01_grafana-instance-pvc.yml
+yaml/metrics/prometheus/00_operator.yml
+yaml/metrics/prometheus/01_subscription.yml
