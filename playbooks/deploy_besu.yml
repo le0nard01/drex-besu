@@ -3,7 +3,7 @@
 
   tasks:
     - block:
-        - name: Autenticação no OpenShift
+        - name: OpenShift authentication
           community.okd.openshift_auth:
             host: "{{ openshift_cluster }}"
             username: "{{ openshift_username }}"
@@ -61,7 +61,7 @@
             state: present
             namespace: "{{ project_name }}"
 
-        - name: Prepare pvc hyperledger besu data
+        - name: Prepare svc hyperledger besu data
           ansible.builtin.template:
             src: ../yaml/besu/besu-svc.yml.j2
             dest: ../yaml/besu/besu-svc.yml

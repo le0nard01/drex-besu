@@ -3,7 +3,7 @@
 
   tasks:
     - block:
-        - name: Autenticação no OpenShift
+        - name: OpenShift authentication
           community.okd.openshift_auth:
             host: "{{ openshift_cluster }}"
             username: "{{ openshift_username }}"
